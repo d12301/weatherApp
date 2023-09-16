@@ -26,12 +26,15 @@ const WeatherApp=()=>{
    const temp=document.getElementsByClassName('temp');
    const location =document.getElementsByClassName('location');
    const feels=document.getElementsByClassName('feelsLike');
+   const press=document.getElementsByClassName('press');
 
    humi[0].innerHTML=data.main.humidity+'%';
    wind[0].innerHTML=data.wind.speed+'km/h';
    temp[0].innerHTML=data.main.temp+ "°C";
    location[0].innerHTML=data.name;
    feels[0].innerHTML=data.main.feels_like+"°C";
+   press[0].innerHTML=data.main.pressure + "Bar";
+
 
    if(data.weather[0].icon==='01d'||data.weather[0].icon==='01n'){
        setWicon(clear);
