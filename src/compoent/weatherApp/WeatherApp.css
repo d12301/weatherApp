@@ -90,3 +90,22 @@
     margin-top: 10px;
     
 }
+.new{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    gap: 170px;
+    
+}
+.new1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    gap: 190px;
+}

@@ -25,11 +25,13 @@ const WeatherApp=()=>{
    const wind=document.getElementsByClassName('wind')
    const temp=document.getElementsByClassName('temp');
    const location =document.getElementsByClassName('location');
+   const feels=document.getElementsByClassName('feelsLike');
 
    humi[0].innerHTML=data.main.humidity+'%';
    wind[0].innerHTML=data.wind.speed+'km/h';
    temp[0].innerHTML=data.main.temp+ "°C";
    location[0].innerHTML=data.name;
+   feels[0].innerHTML=data.main.feels_like+"°C";
 
    if(data.weather[0].icon==='01d'||data.weather[0].icon==='01n'){
        setWicon(clear);
@@ -90,6 +92,16 @@ const WeatherApp=()=>{
                     </div>
                 </div>
             </div>
+            <div className='new '>
+                
+                <label htmlFor="feels">Feels Like</label>  
+                <label htmlFor="Pres">Pressure</label>
+            </div>
+            <div className='new1'>
+                <div className="feelsLike" id='feels'>26 &deg;C</div>
+                <div className="press">1012 Bar</div>
+             </div>
+         
         </div>
     )
 }
